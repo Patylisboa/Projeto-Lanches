@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Lanches</title>
+</head>
+
+<body>
+  <img src="img/lanched.png" alt="Lanches" class="normal">
+  <h1>Lanches Avenida - Controle de Pedidos</h1>
+  <p>Item do Pedido:
+    <br>
+    <input type="radio" name="produto" id="rbLanche" checked autofocus> Lanche
+    <br>
+    <input type="radio" name="produto" id="rbPromo"> Promocao
+    <br>
+    <span>Item:</span>
+    <select id="inLanche">
+      <option value="l1">X-Bacon</option>
+      <option value="l2">X-Burger</option>
+      <option value="l3">X-Egg</option>
+      <option value="l4">X-Egg Bacon</option>
+    </select>
+    <select id="inPromo" class="oculta">
+      <option value="p1">Light</option>
+      <option value="p2">Muita carne</option>
+      <option value="p3">Muito queijo</option>
+    </select>
+  </p>
+  <p>Detalhes do Item:
+    <input type="text" id="inDetalhes" class="detalhes">
+    <input type="button" value="Adicionar" id="btAdicionar">
+    <h3 id ="outPreco"></h3>
+
+  </p>
+  <pre id="outPedido"></pre>
+  <script src="js/controll.js"></script>
+</body>
+
+</html>
